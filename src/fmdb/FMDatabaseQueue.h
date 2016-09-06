@@ -195,5 +195,8 @@ static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey
 // If you need to nest, use FMDatabase's startSavePointWithName:error: instead.
 - (NSError*)inSavePoint:(void (^)(FMDatabase *db, BOOL *rollback))block;
 
+- (FMDatabase*)database;
+
+
 @end
 
