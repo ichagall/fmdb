@@ -1,3 +1,4 @@
 修改记录
+  YNote V5.6.0:
    1.FMDatabaseQueue.h添加一个对外接口: (FMDatabase*)database;
    2.dispatch_queue的key 去掉static属性，以便YNote工程内部使用;
