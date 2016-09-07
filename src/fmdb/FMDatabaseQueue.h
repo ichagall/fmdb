@@ -59,14 +59,6 @@
  @warning The calls to `FMDatabaseQueue`'s methods are blocking.  So even though you are passing along blocks, they will **not** be run on another thread.
 
  */
- 
- 
- /*
- * A key used to associate the FMDatabaseQueue object with the dispatch_queue_t it uses.
- * This in turn is used for deadlock detection by seeing if inDatabase: is called on
- * the queue's dispatch queue, which should not happen and causes a deadlock.
- */
-static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey;
 
 @interface FMDatabaseQueue : NSObject {
     NSString            *_path;
