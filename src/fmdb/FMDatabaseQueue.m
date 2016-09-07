@@ -28,7 +28,7 @@
  * This in turn is used for deadlock detection by seeing if inDatabase: is called on
  * the queue's dispatch queue, which should not happen and causes a deadlock.
  */
-//static const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey;
+const void * const kDispatchQueueSpecificKey = &kDispatchQueueSpecificKey;
  
 @implementation FMDatabaseQueue
 
