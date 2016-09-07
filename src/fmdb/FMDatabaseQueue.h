@@ -187,6 +187,7 @@
 // If you need to nest, use FMDatabase's startSavePointWithName:error: instead.
 - (NSError*)inSavePoint:(void (^)(FMDatabase *db, BOOL *rollback))block;
 
+//YNote内部使用接口
 - (FMDatabase*)database;
 
 
